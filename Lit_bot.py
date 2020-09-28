@@ -38,7 +38,7 @@ def given_message(bot, update):
   elif text == 'Turn off the Light':
     lightoff(bot,update) 
 
-u = Updater('TELEGRAM_TOKEN',use_context = True)
+u = Updater('TELEGRAM_TOKEN')
 dp = u.dispatcher
 dp.add_handler(CommandHandler('lighton',lighton))
 dp.add_handler(CommandHandler('lightoff',lightoff))
